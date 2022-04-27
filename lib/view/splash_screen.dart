@@ -5,6 +5,7 @@ import 'package:latsol/view/login_page.dart';
 
 class SplashScreen extends StatelessWidget {
   const SplashScreen({Key? key}) : super(key: key);
+  static String route = "splash_screen";
 
   @override
   Widget build(BuildContext context) {
@@ -12,12 +13,11 @@ class SplashScreen extends StatelessWidget {
         Duration(
           seconds: 5,
         ), () {
-      Navigator.of(context)
-          .push(MaterialPageRoute(builder: (context) => LoginPage()));
+      Navigator.of(context).pushNamed(LoginPage.route);
     });
 
     return Scaffold(
-      backgroundColor: Colors.indigoAccent,
+      backgroundColor: Color(0xff01bdc2),
       body: Center(
         child: Image.asset("assets/auth/ic_splash.png"),
       ),
