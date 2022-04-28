@@ -7,9 +7,13 @@ class LoginPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      debugShowCheckedModeBanner: false,
       home: Scaffold(
         body: Center(
-          child: Text("Selamat datang fi Form Login"),
+          child: Text(
+            "Selamat Datang di Form Login",
+            style: TextStyle(color: Colors.blue),
+          ),
         ),
       ),
     );
