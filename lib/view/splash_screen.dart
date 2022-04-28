@@ -19,7 +19,10 @@ class SplashScreen extends StatelessWidget {
     return Scaffold(
       backgroundColor: Color(0xff01bdc2),
       body: Center(
-        child: Image.asset("assets/auth/ic_splash.png"),
+        child: Padding(
+          padding: const EdgeInsets.all(18.0),
+          child: Image.asset("assets/auth/ic_splash.png"),
+        ),
       ),
     );
   }
